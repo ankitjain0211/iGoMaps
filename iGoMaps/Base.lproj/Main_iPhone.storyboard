@@ -1,23 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Zi2-kG-Weh">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="YJL-6v-zgO">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zi2-kG-Weh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i4q-gb-WW0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VyG-xj-FXY" kind="relationship" relationship="rootViewController" id="6E9-1H-rv3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74Q-fI-BWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="138"/>
+        </scene>
+        <!--Maps View Controller - Maps-->
+        <scene sceneID="SLF-gY-Lc7">
+            <objects>
+                <viewController id="VyG-xj-FXY" customClass="MapsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WCg-EL-I21"/>
+                        <viewControllerLayoutGuide type="bottom" id="hAD-tR-osu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hSr-ty-ADb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search location" showsSearchResultsButton="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Sf-B7-UoR">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="VyG-xj-FXY" id="0qT-Et-bhk"/>
+                                </connections>
+                            </searchBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4p7-Sa-lhB">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapPin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-L1-hVe">
+                                <rect key="frame" x="136" y="284" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Maps" id="C5S-39-thW"/>
+                    <connections>
+                        <outlet property="mapsBgView" destination="4p7-Sa-lhB" id="qYr-f4-lYQ"/>
+                        <outlet property="searchDisplayController" destination="d7r-Wr-9yl" id="m32-MS-9dm"/>
+                        <outlet property="view" destination="hSr-ty-ADb" id="Qx3-EJ-1x9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OP6-8q-M7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="d7r-Wr-9yl">
+                    <connections>
+                        <outlet property="delegate" destination="VyG-xj-FXY" id="fKH-sS-n10"/>
+                        <outlet property="searchBar" destination="4Sf-B7-UoR" id="Zek-mr-CE8"/>
+                        <outlet property="searchContentsController" destination="VyG-xj-FXY" id="29e-wi-qsP"/>
+                        <outlet property="searchResultsDataSource" destination="VyG-xj-FXY" id="vSj-AR-fgb"/>
+                        <outlet property="searchResultsDelegate" destination="VyG-xj-FXY" id="orQ-W0-Avv"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="942" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mapPin.png" width="24" height="24"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
