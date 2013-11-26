@@ -47,21 +47,25 @@
                                     <outlet property="delegate" destination="VyG-xj-FXY" id="0qT-Et-bhk"/>
                                 </connections>
                             </searchBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4p7-Sa-lhB">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4p7-Sa-lhB" userLabel="Google Map View">
                                 <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapPin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-L1-hVe">
-                                <rect key="frame" x="136" y="284" width="24" height="24"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapPin@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-L1-hVe">
+                                <rect key="frame" x="170" y="320" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Maps" id="C5S-39-thW"/>
+                    <navigationItem key="navigationItem" title="Maps" id="C5S-39-thW">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="RPD-aw-28O"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapsBgView" destination="4p7-Sa-lhB" id="qYr-f4-lYQ"/>
+                        <outlet property="searchBar" destination="4Sf-B7-UoR" id="59h-J2-JuF"/>
                         <outlet property="searchDisplayController" destination="d7r-Wr-9yl" id="m32-MS-9dm"/>
                         <outlet property="view" destination="hSr-ty-ADb" id="Qx3-EJ-1x9"/>
                     </connections>
@@ -81,7 +85,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mapPin.png" width="24" height="24"/>
+        <image name="mapPin@2x.png" width="24" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMaps/GoogleMaps.h>
+#import "SVGeocoder.h"
 
-@interface MapsViewController : UIViewController
+@interface MapsViewController : UIViewController <GMSMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate, UISearchDisplayDelegate, UITableViewDataSource, UITableViewDelegate>
 
+@property (unsafe_unretained, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UIView *mapsBgView;
 
 @end

@@ -11,14 +11,12 @@
 		BC3AF7D5180E9EDD0010BF1D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3AF7CF180E9EDD0010BF1D /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BC3AF7D6180E9EDD0010BF1D /* SVGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3AF7D2180E9EDD0010BF1D /* SVGeocoder.m */; };
 		BC3AF7D7180E9EDD0010BF1D /* SVPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3AF7D4180E9EDD0010BF1D /* SVPlacemark.m */; };
-		BC3AF7DE180EB2700010BF1D /* mapPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3AF7DD180EB2700010BF1D /* mapPin@2x.png */; };
 		BCA22724180E64E1007D51CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA22723180E64E1007D51CA /* Foundation.framework */; };
 		BCA22726180E64E1007D51CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA22725180E64E1007D51CA /* CoreGraphics.framework */; };
 		BCA22728180E64E1007D51CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA22727180E64E1007D51CA /* UIKit.framework */; };
 		BCA2272E180E64E1007D51CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCA2272C180E64E1007D51CA /* InfoPlist.strings */; };
 		BCA22730180E64E1007D51CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA2272F180E64E1007D51CA /* main.m */; };
 		BCA22734180E64E1007D51CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA22733180E64E1007D51CA /* AppDelegate.m */; };
-		BCA2273D180E64E1007D51CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA2273C180E64E1007D51CA /* ViewController.m */; };
 		BCA2273F180E64E1007D51CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA2273E180E64E1007D51CA /* Images.xcassets */; };
 		BCA22746180E64E1007D51CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA22745180E64E1007D51CA /* XCTest.framework */; };
 		BCA22747180E64E1007D51CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA22723180E64E1007D51CA /* Foundation.framework */; };
@@ -39,6 +37,7 @@
 		BCA22772180E6C8A007D51CA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA22771180E6C8A007D51CA /* OpenGLES.framework */; };
 		BCA22774180E6C94007D51CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA22773180E6C94007D51CA /* QuartzCore.framework */; };
 		BCA22776180E6C9F007D51CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA22775180E6C9F007D51CA /* SystemConfiguration.framework */; };
+		BCE2655A1844D425003187C5 /* IGMConstants in Resources */ = {isa = PBXBuildFile; fileRef = BCE265591844D425003187C5 /* IGMConstants */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +60,6 @@
 		BC3AF7D3180E9EDD0010BF1D /* SVPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPlacemark.h; sourceTree = "<group>"; };
 		BC3AF7D4180E9EDD0010BF1D /* SVPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPlacemark.m; sourceTree = "<group>"; };
 		BC3AF7D9180E9F8D0010BF1D /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
-		BC3AF7DD180EB2700010BF1D /* mapPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapPin@2x.png"; path = "iGoMaps/Resource/mapPin@2x.png"; sourceTree = "<group>"; };
 		BCA22720180E64E1007D51CA /* iGoMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA22723180E64E1007D51CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCA22725180E64E1007D51CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,9 +71,6 @@
 		BCA22732180E64E1007D51CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCA22733180E64E1007D51CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BCA22736180E64E1007D51CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		BCA22739180E64E1007D51CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		BCA2273B180E64E1007D51CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BCA2273C180E64E1007D51CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BCA2273E180E64E1007D51CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BCA22744180E64E1007D51CA /* iGoMapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iGoMapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA22745180E64E1007D51CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -96,6 +91,7 @@
 		BCA22771180E6C8A007D51CA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BCA22773180E6C94007D51CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BCA22775180E6C9F007D51CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BCE265591844D425003187C5 /* IGMConstants */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IGMConstants; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +172,6 @@
 		BC3AF7DF180EB2D50010BF1D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BC3AF7DD180EB2700010BF1D /* mapPin@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -229,13 +224,11 @@
 		BCA22729180E64E1007D51CA /* iGoMaps */ = {
 			isa = PBXGroup;
 			children = (
+				BCF260041844D2D5002B83FA /* Classes */,
 				BC3AF7CC180E9E590010BF1D /* External Files */,
 				BCA22732180E64E1007D51CA /* AppDelegate.h */,
 				BCA22733180E64E1007D51CA /* AppDelegate.m */,
 				BCA22735180E64E1007D51CA /* Main_iPhone.storyboard */,
-				BCA22738180E64E1007D51CA /* Main_iPad.storyboard */,
-				BCA2273B180E64E1007D51CA /* ViewController.h */,
-				BCA2273C180E64E1007D51CA /* ViewController.m */,
 				BC3AF7C9180E935A0010BF1D /* MapsViewController.h */,
 				BC3AF7CA180E935A0010BF1D /* MapsViewController.m */,
 				BCA2273E180E64E1007D51CA /* Images.xcassets */,
@@ -271,6 +264,14 @@
 				BCA2274E180E64E1007D51CA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCF260041844D2D5002B83FA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BCE265591844D425003187C5 /* IGMConstants */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,9 +350,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC3AF7DE180EB2700010BF1D /* mapPin@2x.png in Resources */,
 				BCA2273F180E64E1007D51CA /* Images.xcassets in Resources */,
 				BCA2272E180E64E1007D51CA /* InfoPlist.strings in Resources */,
+				BCE2655A1844D425003187C5 /* IGMConstants in Resources */,
 				BCA2275E180E6BE3007D51CA /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +374,6 @@
 			files = (
 				BC3AF7D7180E9EDD0010BF1D /* SVPlacemark.m in Sources */,
 				BC3AF7D6180E9EDD0010BF1D /* SVGeocoder.m in Sources */,
-				BCA2273D180E64E1007D51CA /* ViewController.m in Sources */,
 				BCA22734180E64E1007D51CA /* AppDelegate.m in Sources */,
 				BCA22730180E64E1007D51CA /* main.m in Sources */,
 				BC3AF7CB180E935A0010BF1D /* MapsViewController.m in Sources */,
@@ -414,14 +414,6 @@
 				BCA22736180E64E1007D51CA /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		BCA22738180E64E1007D51CA /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCA22739180E64E1007D51CA /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		BCA2274E180E64E1007D51CA /* InfoPlist.strings */ = {
